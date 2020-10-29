@@ -11,16 +11,16 @@ Should you desire to test this program, you are welcome to download it and set i
 Ensure that for glew, you also define the macro GLEW_STATIC in your preferences. Once everything is linked, the project should build properly.
 
 # Settings
-The flock simulation had several settings. Below are the description of what each setting does.
+The flock simulation has several settings. Below are the description of what each setting does. All default settings are stored in flock.h as macros.
 
 ## Speed
-Adjusts the maximum speed of the flock. A 0 values means no speed and a 1 value means the fastest allowed by the macro MAX_SPEED.
+Adjusts the maximum speed of the flock. A 0 values means no speed and a 1 value means the maximum speed allowed. The maximum speed is set by the macro MAX_SPEED.
 
 ## Speed Variation
 Enables or disables variation of speed among the flock members. It is set to disabled by default with the macro VARIABLE_SPEEDS.
 
 ## Distance
-The range in which each flock member can see to determine their next move. A larger range means each flock member incorporates more of its neighbors to decide its next move. A smaller range means each flock member incorporates fewer of its neighbors when deciding its next move.
+The range to which each flock member can see to determine their next move. A larger range means each flock member incorporates more of its neighbors to decide its next move. A smaller range means each flock member incorporates fewer of its neighbors when deciding its next move.
 
 ## Cone of Vision
 The angle from the center of the flock member's vision to the left and right of which the flock member can see. A smaller cone of vision means the flock member can't see members behind it, or next to it.
